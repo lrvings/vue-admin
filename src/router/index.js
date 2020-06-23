@@ -32,7 +32,7 @@ const router = new VueRouter({
   routes
 })
 
-//* 访问权限控制
+// 访问权限控制
 router.beforeEach((to, from, next) => {
   if (to.path === '/login') return next()
   const tokenId = window.sessionStorage.getItem('tokenid')

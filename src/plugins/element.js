@@ -24,6 +24,7 @@ Vue.use(Main)
 Vue.use(Header)
 Vue.use(Menu)
 Vue.use(Submenu)
+
 Vue.use(MenuItem)
 
 Vue.prototype.$message = Message
