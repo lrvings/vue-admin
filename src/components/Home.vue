@@ -74,7 +74,7 @@ export default {
       window.sessionStorage.clear()
       this.$router.push('/login')
     },
-    //* 菜单列表数据
+    // 菜单列表数据
     async getMenuList() {
       const { data: res } = await this.$http.get('menus')
       if (res.meta.status !== 200) return this.$message.err(res.meta.msg)
