@@ -2,7 +2,7 @@
   <el-container class="home-container">
     <el-header>
       <div>
-        <img src="../assets/img/avatar.jpg" alt="avatar" />
+        <img src="~assets/img/avatar.jpg" alt="avatar" />
         <span>Vue + element UI后台管理</span>
       </div>
       <el-button type="info" @click="logout">退出</el-button>
@@ -20,6 +20,7 @@
           :collapse="isCollapse"
           :collapse-transition="false"
           router
+          :default-active="activePath"
         >
           <el-submenu
             :index="item.id + ''"
@@ -34,6 +35,7 @@
               :index="'/' + subItem.path"
               v-for="subItem in item.children"
               :key="subItem.id"
+              @click="saveNavState('/' + subItem.path)"
             >
               <template slot="title">
                 <i class="el-icon-menu"></i>
@@ -63,11 +65,13 @@ export default {
         102: 'el-icon-s-claim',
         145: 'el-icon-s-platform'
       },
-      isCollapse: false
+      isCollapse: false,
+      activePath: ''
     }
   },
   created() {
     this.getMenuList()
+    this.activePath = window.sessionStorage.getItem('navActive')
   },
   methods: {
     logout() {
@@ -82,6 +86,9 @@ export default {
     },
     togleCollapse() {
       this.isCollapse = !this.isCollapse
+    },
+    saveNavState(activePath) {
+      window.sessionStorage.setItem('navActive', activePath)
     }
   }
 }
@@ -133,7 +140,6 @@ export default {
   color: #fff;
   text-align: center;
   letter-spacing: 0.2em;
-  // 鼠标放上去变成小手
   cursor: pointer;
 }
 </style>

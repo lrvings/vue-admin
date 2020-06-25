@@ -2,7 +2,7 @@
   <div class="login-container">
     <div class="login-box">
       <div class="avtar-box">
-        <img src="../assets/img/avatar.jpg" alt="" />
+        <img src="~assets/img/avatar.jpg" alt="" />
       </div>
       <el-form
         ref="formRef"
