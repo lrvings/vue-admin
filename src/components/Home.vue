@@ -5,7 +5,10 @@
         <img src="~assets/img/avatar.jpg" alt="avatar" />
         <span>Vue + element UI后台管理</span>
       </div>
+      <div>
+      <div class="block"><el-avatar :size="50" :src="circleUrl"></el-avatar></div>
       <el-button type="info" @click="logout">退出</el-button>
+      </div>
     </el-header>
     <el-container>
       <!-- 侧边 -->
@@ -66,7 +69,9 @@ export default {
         145: 'el-icon-s-platform'
       },
       isCollapse: false,
-      activePath: ''
+      activePath: '',
+      circleUrl: 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png'
+
     }
   },
   created() {
@@ -103,7 +108,7 @@ export default {
   justify-content: space-between;
   background-color: #545c64;
   align-items: center;
-  padding-left: 50px;
+  padding-left: 0p;
   color: #fff;
   font-size: 20px;
   > div {
@@ -141,5 +146,8 @@ export default {
   text-align: center;
   letter-spacing: 0.2em;
   cursor: pointer;
+}
+.el-button {
+  margin-left: 30px;
 }
 </style>

@@ -22,6 +22,7 @@
           <el-button type="primary" @click="addDialogVisible = true"
             >添加用户</el-button
           >
+          <el-button class="share-button" icon="el-icon-share" type="primary"></el-button>
         </el-col>
       </el-row>
 

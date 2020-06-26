@@ -23,7 +23,8 @@ import {
   Switch,
   Tooltip,
   Dialog,
-  MessageBox
+  MessageBox,
+  Avatar
 } from 'element-ui'
 
 Vue.use(Button)
@@ -48,6 +49,7 @@ Vue.use(Col)
 Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Dialog)
+Vue.use(Avatar)
 
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
