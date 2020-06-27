@@ -13,11 +13,6 @@ export default {
   components: {
     Breadcrumb,
     CateCard
-  },
-  data() {
-    return {
-
-    }
   }
 }
 
