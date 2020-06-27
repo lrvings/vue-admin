@@ -103,7 +103,7 @@ export default {
   justify-content: space-between;
   background-color: #545c64;
   align-items: center;
-  padding-left: 50px;
+  padding-left: 0;
   color: #fff;
   font-size: 20px;
   > div {
@@ -115,7 +115,7 @@ export default {
       border-radius: 50%;
     }
     span {
-      margin-left: 10px;
+      margin-left: 20px;
     }
   }
 }
