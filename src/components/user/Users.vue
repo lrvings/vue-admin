@@ -81,16 +81,12 @@
         </el-table-column>
       </el-table>
 
-      <el-pagination
-        @size-change="handleSizeChange"
-        @current-change="handleCurrentChange"
-        :current-page="queryInfo.pagenum"
-        :page-sizes="[1, 2, 5, 10]"
-        :page-size="queryInfo.pagesize"
-        layout="total, sizes, prev, pager, next, jumper"
+       <Pagination
+        :queryInfo="queryInfo"
         :total="total"
-      >
-      </el-pagination>
+        @handleSizeChange="handleSizeChange"
+        @handleCurrentChange="handleCurrentChange"/>
+
     </el-card>
 
     <add-user
@@ -135,7 +131,8 @@
 </template>
 
 <script>
-import Breadcrumb from '../common/Breadcrumb'
+import Breadcrumb from 'commons/Breadcrumb'
+import Pagination from 'commons/Pagination'
 
 import AddUser from './children/AddUser'
 import EditUser from './children/EditUser'
@@ -144,6 +141,7 @@ export default {
   name: 'Users',
   components: {
     Breadcrumb,
+    Pagination,
     AddUser,
     EditUser
   },

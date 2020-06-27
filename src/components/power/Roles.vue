@@ -108,7 +108,7 @@
 </template>
 
 <script>
-import Breadcrumb from '../common/Breadcrumb'
+import Breadcrumb from 'commons/Breadcrumb'
 export default {
   name: 'Roles',
   components: {
