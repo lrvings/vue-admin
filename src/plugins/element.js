@@ -24,14 +24,10 @@ import {
   Tooltip,
   Dialog,
   MessageBox,
-<<<<<<< HEAD
-  Avatar
-=======
   Tag,
   Tree,
   Select,
   Option
->>>>>>> rights
 } from 'element-ui'
 
 Vue.use(Button)
@@ -56,14 +52,10 @@ Vue.use(Col)
 Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Dialog)
-<<<<<<< HEAD
-Vue.use(Avatar)
-=======
 Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
->>>>>>> rights
 
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm

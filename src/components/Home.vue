@@ -108,11 +108,7 @@ export default {
   justify-content: space-between;
   background-color: #545c64;
   align-items: center;
-<<<<<<< HEAD
-  padding-left: 0p;
-=======
   padding-left: 0;
->>>>>>> rights
   color: #fff;
   font-size: 20px;
   > div {
