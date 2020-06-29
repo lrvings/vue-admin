@@ -51,6 +51,7 @@ module.exports = {
     'vue/valid-v-show': 'off',
     'vue/valid-v-text': 'off',
     'space-before-function-paren': 0
+
   },
 
   'extends': [
