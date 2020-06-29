@@ -128,7 +128,7 @@ export default {
         params: this.queryInfo
       })
       if (res.meta.status !== 200) {
-        return this.$message.error('获取分类列表失败')
+        return this.$message.error('获取分类列失败')
       }
       this.cateList = res.data.result
       this.total = res.data.total

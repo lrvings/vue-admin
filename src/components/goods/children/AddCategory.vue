@@ -102,7 +102,7 @@ export default {
         }
         this.$message.success('添加分类成功')
         this.getCateList()
-        // this.$emit('myEvent')
+        this.$emit('myEvent')
       })
     },
     addCateDialogClosed() {
