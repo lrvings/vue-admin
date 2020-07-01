@@ -112,6 +112,15 @@ export default {
         })
       if (res.meta.status !== 200) return
 
+      res.data.forEach(item => {
+        item.attr_vals = item.attr_vals ? item.attr_vals.split(' ') : []
+
+        // 控制文本框的显示与隐藏
+        item.inputVisible = false
+        // 文本框的输入值
+        item.inputValue = ''
+      })
+
       if (this.activeName === 'many') {
         this.manyTable = res.data
       } else {
